@@ -1,57 +1,21 @@
-# 1. Crear un servidor para dar respuesta las necesidades de la aplicación a desarrollar.
+# 1. Gestión de DNS
 
-### 1.1 conectarse al servidor
+### 1.1 Añadir un subdominio
 
-para conectarte al servidor, nos conectaremos via ssh y cogemos la ip del servidor.
+Vamos a Registros DNS.
 
-Ejemplo:
-![](fotos/ssh1.PNG)
+![](fotos/Captura30.PNG)
 
-### 1.2 Instalar apache2
-para instalar el apache tendremos que meter este comando:
-![](fotos/apache2.PNG)
+### 1.2 tipos de DNS
 
 
-### 1.3 Instalar MySQL
-Para instalar el mysql server procederemos a meter este comando:
+ Tipo A: es para IP-s(0.0.0.0 por ejemplo). 
+Tipo CNAME es para direcciones URL(www.google.es por ejemplo).
+Tipo AAAA: es para IP-s IPv6.
+Tipo TXT: son un tipo de registros de sistema de nombres de dominio (DNS) que contienen información de texto de fuentes externas a tu dominio y que puedes añadir a su configuración.
 
-![](fotos/Captura1.PNG)
- 
- despues de haber instalado el mysql procederemos a configurarlo,
- meter este comando para configurarlo:
+Nosotros pondremos el nombre del subdominio(en mi caso "xarles") del tipo A y ponemos la IP Estatica que tenemos en AWS IP Estatica.
 
-![](fotos/Captura2.PNG)
+![](fotos/Captura31.PNG)
 
-todo lo que te ponga aqui, dale a "Y"  o si usted desea cambia como tu quieras
-
-![](fotos/Captura3.PNG)
-![](fotos/Captura4.PNG)
-
-Metemos este comando para configurar el phpmyadmin:
-
-![](fotos/Captura5.PNG)
-
-Seleccionamos el apache2 que instalamos anteriormente y le damos a Ok.
-
-![](fotos/Captura6.PNG)
-
-Le damos a Yes
-![](fotos/Captura7.PNG)
-
-pon una contraseña:
-![](fotos/Captura8.PNG)
-![](fotos/Captura9.PNG)
-
-le damos a "retry" y luego a "Yes".
-![](fotos/Captura10.PNG)
-![](fotos/Captura11.PNG)
-
-Seleccionamos Unix Socket y le ponemos nombre a la base de datos
-![](fotos/Captura12.PNG)
-![](fotos/Captura13.PNG)
-
-ponemos el usuario para MySQL yo pondre "root@localhost" y la contraseña.
-![](fotos/Captura14.PNG)
-![](fotos/Captura15.PNG)
-
-
+Ya tienes todo configurado. :smile:
